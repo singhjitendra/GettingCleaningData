@@ -1,22 +1,24 @@
 # Original data:
 
-source
-description
-Data Transformation Steps
+1. [source](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
+2. [description](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)
+
+# Data Transformation Steps
 
 Following data transformations are carried out by the run_analysis.R script.
 
-For each of the training and test datasets,
-Read the X values
-Take a subset of the columns representing only the mean and standard deviation values. Subsetting is done early on to conserve memory.
-Associate additional columns to represent activity IDs and subject IDs read from y_<dataset>.txt and subject_<dataset>.txt files respectively.
-Assign column names by manipulating the measurement names in features.txt to remove spaces and convert them to camel case.
-Merge the training and the test sets, read as in step 1 to create one data set.
-Associate an additional column with descriptive activity names as specified in activity_labels.txt.
-Melt the dataset by specifying activity ID, name and subject ID as the only ID variables.
-Re cast the melted dataset with activity name and subject id as the only IDs and mean as the aggregator function.
-Save the result in re-casted dataset as tidy.txt
-Variable Descriptions
+1. For each of the training and test datasets,
+     Read the X values
+     Take a subset of the columns representing only the mean and standard deviation values. Subsetting is done early on to conserve memory.
+     Associate additional columns to represent activity IDs and subject IDs read from y_<dataset>.txt and subject_<dataset>.txt files respectively.
+     Assign column names by manipulating the measurement names in features.txt to remove spaces and convert them to camel case.
+2. Merge the training and the test sets, read as in step 1 to create one data set.
+3. Associate an additional column with descriptive activity names as specified in activity_labels.txt.
+4. Melt the dataset by specifying activity ID, name and subject ID as the only ID variables.
+5. Re cast the melted dataset with activity name and subject id as the only IDs and mean as the aggregator function.
+6. Save the result in re-casted dataset as tidy.txt
+
+# Variable Descriptions
 
 The data for this data set was derived from sources mentioned in the "Original data" section of this document. Part of the description below has been taken from the original data description.
 
@@ -30,9 +32,10 @@ These signals were used to estimate variables of the feature vector for each pat
 
 The set of variables that were estimated from these signals are:
 
-mean: Mean value
-std: Standard deviation
-Data Columns
+1. mean: Mean value
+2 std: Standard deviation
+
+# Data Columns
 
 ActivityName: Activity being performed
 SubjectID: ID indicating the subject from whom data was collected
