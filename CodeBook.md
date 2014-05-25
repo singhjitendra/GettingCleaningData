@@ -33,7 +33,7 @@ These signals were used to estimate variables of the feature vector for each pat
 The set of variables that were estimated from these signals are:
 
 1. mean: Mean value
-2 std: Standard deviation
+2. std: Standard deviation
 
 # Data Columns
 
